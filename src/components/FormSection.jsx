@@ -1,4 +1,3 @@
-
 import { useFormik } from "formik";
 import React from "react";
 import { Button } from "antd";
@@ -192,6 +191,7 @@ const FormSection = () => {
               textDecoration: "none",
               textAlign: "right",
               width: "400px",
+              marginLeft: "30px",
             }}
           >
             Forgot password?
@@ -206,9 +206,11 @@ const FormSection = () => {
         </div>
         <br />
 
-        <button type="submit" className="create-account">
-          create account
-        </button>
+        <Button type="primary" className="create-account">
+          <Link to="/signInGoogle" style={{ color: "white" }}>
+            Create account
+          </Link>
+        </Button>
         <div className="google-btn">
           <Button
             type="primary"
